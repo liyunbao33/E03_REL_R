@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.88
+ * Model version                  : 1.6
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Sep 25 21:47:23 2023
+ * C/C++ source code generated on : Thu Oct 12 10:14:46 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -33,9 +33,9 @@ typedef struct {
   uint8 is_MainProgress;               /* '<S3>/FRDoorRlsDriver' */
   uint8 is_Release;                    /* '<S3>/FRDoorRlsDriver' */
   uint8 is_Step2_Open;                 /* '<S3>/FRDoorRlsDriver' */
-  uint8 is_MainProgress_k;             /* '<S3>/FRDoorRlsDriver' */
-  uint8 is_Release_n;                  /* '<S3>/FRDoorRlsDriver' */
-  uint8 is_Step2_Open_c;               /* '<S3>/FRDoorRlsDriver' */
+  uint8 is_MainProgress_a;             /* '<S3>/FRDoorRlsDriver' */
+  uint8 is_Release_h;                  /* '<S3>/FRDoorRlsDriver' */
+  uint8 is_Step2_Open_f;               /* '<S3>/FRDoorRlsDriver' */
   uint8 SL_e_CycleCount;               /* '<S3>/FRDoorRlsDriver' */
   uint8 SL_e_DoorRlsDelayTime;         /* '<S3>/FRDoorRlsDriver' */
   boolean SO_b_DoorRlsReq_prev;        /* '<S3>/FRDoorRlsDriver' */
@@ -49,8 +49,8 @@ typedef struct {
   uint8 is_RlsReq;                     /* '<S3>/FRDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FRDoorRlsReq' */
   uint8 is_DoorLock;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_RlsReq_f;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_Trigger_o;                  /* '<S3>/FRDoorRlsReq' */
+  uint8 is_RlsReq_i;                   /* '<S3>/FRDoorRlsReq' */
+  uint8 is_Trigger_j;                  /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FRDoorRlsReq' */
@@ -67,7 +67,7 @@ typedef struct {
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
   uint8 SO_e_DoorRlsDelayTime;         /* '<S3>/RRDoorRlsReq' */
-  uint8 SO_e_DoorRlsDelayTime_k;       /* '<S3>/FRDoorRlsReq' */
+  uint8 SO_e_DoorRlsDelayTime_d;       /* '<S3>/FRDoorRlsReq' */
   Boolean VbOUT_HWA_FRDoorFullOpen_flg_Vb;
      /* '<S2>/VbOUT_HWA_FRDoorFullOpen_flg_VbOUT_HWA_FRDoorFullOpen_flg_read' */
   Boolean VbINP_HWA_FRDoorAjar_flg_VbINP_;
@@ -80,14 +80,14 @@ typedef struct tag_B_REL_T {
   boolean SO_b_MotorA;                 /* '<S3>/RRDoorRlsDriver' */
   boolean SO_b_MotorB;                 /* '<S3>/RRDoorRlsDriver' */
   boolean SO_b_DoorRlsReq_i;           /* '<S3>/FRDoorRlsReq' */
-  boolean SO_b_MotorA_j;               /* '<S3>/FRDoorRlsDriver' */
-  boolean SO_b_MotorB_n;               /* '<S3>/FRDoorRlsDriver' */
+  boolean SO_b_MotorA_f;               /* '<S3>/FRDoorRlsDriver' */
+  boolean SO_b_MotorB_c;               /* '<S3>/FRDoorRlsDriver' */
   boolean SO_b_FRDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SO_b_RRDoorInBtnSts;         /* '<S3>/DoorSwSts' */
   boolean SO_b_FRDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
   boolean SO_b_RRDoorHndBtnSts;        /* '<S3>/DoorSwSts' */
   Mot_Cmd_E SO_e_MotorCmd;             /* '<S3>/RRDoorRlsDriver' */
-  Mot_Cmd_E SO_e_MotorCmd_b;           /* '<S3>/FRDoorRlsDriver' */
+  Mot_Cmd_E SO_e_MotorCmd_m;           /* '<S3>/FRDoorRlsDriver' */
 } B_REL_T;
 
 /* Block states (default storage) for system '<Root>' */

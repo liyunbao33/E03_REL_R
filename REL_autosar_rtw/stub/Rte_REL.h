@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "REL"
    ARXML schema: "4.3"
-   File generated on: "25-Sep-2023 21:47:27"  */
+   File generated on: "12-Oct-2023 10:14:52"  */
 
 #ifndef Rte_REL_h
 #define Rte_REL_h
@@ -54,6 +54,26 @@ Std_ReturnType Rte_Write_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
 
 Std_ReturnType
   Rte_Invalidate_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg(void);
+
+#define Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
+
+Std_ReturnType Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
+  (Boolean u);
+
+#define Rte_Invalidate_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg Rte_Invalidate_REL_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
+
+Std_ReturnType
+  Rte_Invalidate_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg(void);
+
+#define Rte_Write_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg
+
+Std_ReturnType Rte_Write_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg
+  (Boolean u);
+
+#define Rte_Invalidate_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg Rte_Invalidate_REL_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg
+
+Std_ReturnType
+  Rte_Invalidate_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg(void);
 
 #define Rte_Read_VbINP_CAN_VehicleSpeedVSOSigValidData_flg_VbINP_CAN_VehicleSpeedVSOSigValidData_flg Rte_Read_REL_VbINP_CAN_VehicleSpeedVSOSigValidData_flg_VbINP_CAN_VehicleSpeedVSOSigValidData_flg
 
@@ -103,10 +123,11 @@ Std_ReturnType
 Std_ReturnType
   Rte_Read_VbOUT_HWA_RRDoorFullOpen_flg_VbOUT_HWA_RRDoorFullOpen_flg(Boolean* u);
 
-#define Rte_Read_VeINP_CAN_CrashOutputSts_sig_VeINP_CAN_CrashOutputSts_sig Rte_Read_REL_VeINP_CAN_CrashOutputSts_sig_VeINP_CAN_CrashOutputSts_sig
+#define Rte_Read_VeINP_CAN_ACU3CrashOutputSts_sig_VeINP_CAN_ACU3CrashOutputSts_sig Rte_Read_REL_VeINP_CAN_ACU3CrashOutputSts_sig_VeINP_CAN_ACU3CrashOutputSts_sig
 
 Std_ReturnType
-  Rte_Read_VeINP_CAN_CrashOutputSts_sig_VeINP_CAN_CrashOutputSts_sig(UInt8* u);
+  Rte_Read_VeINP_CAN_ACU3CrashOutputSts_sig_VeINP_CAN_ACU3CrashOutputSts_sig
+  (UInt8* u);
 
 #define Rte_Read_VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig Rte_Read_REL_VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig
 
@@ -327,6 +348,26 @@ Std_ReturnType Rte_Write_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
 
 Std_ReturnType
   Rte_Invalidate_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg(void);
+
+#define Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
+
+Std_ReturnType Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
+  (Boolean u);
+
+#define Rte_Invalidate_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg Rte_Invalidate_REL_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
+
+Std_ReturnType
+  Rte_Invalidate_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg(void);
+
+#define Rte_Write_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg
+
+Std_ReturnType Rte_Write_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg
+  (Boolean u);
+
+#define Rte_Invalidate_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg Rte_Invalidate_REL_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg
+
+Std_ReturnType
+  Rte_Invalidate_VbOUT_REL_RRDoorRlsReq_flg_VbOUT_REL_RRDoorRlsReq_flg(void);
 
 /* Entry point functions */
 extern FUNC(void, REL_CODE) REL_Init(void);
