@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.26
+ * Model version                  : 1.5
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Oct 17 17:36:49 2023
+ * C/C++ source code generated on : Tue Oct 17 18:03:49 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -43,8 +43,8 @@ typedef struct {
   uint8 is_RlsReq;                     /* '<S3>/FRDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FRDoorRlsReq' */
   uint8 is_DoorLock;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_RlsReq_i;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_Trigger_j;                  /* '<S3>/FRDoorRlsReq' */
+  uint8 is_RlsReq_m;                   /* '<S3>/FRDoorRlsReq' */
+  uint8 is_Trigger_h;                  /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FRDoorRlsReq' */
@@ -61,7 +61,7 @@ typedef struct {
 /* Block signals (default storage) */
 typedef struct tag_B_REL_T {
   uint8 SO_e_MotorCmd;                 /* '<S3>/RRDoorRlsDriver' */
-  uint8 SO_e_MotorCmd_d;               /* '<S3>/FRDoorRlsDriver' */
+  uint8 SO_e_MotorCmd_h;               /* '<S3>/FRDoorRlsDriver' */
   Boolean VbOUT_HWA_FRDoorFullOpen_flg_Vb;
      /* '<S2>/VbOUT_HWA_FRDoorFullOpen_flg_VbOUT_HWA_FRDoorFullOpen_flg_read' */
   Boolean VbINP_HWA_FRDoorAjar_flg_VbINP_;

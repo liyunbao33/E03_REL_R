@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "REL"
    ARXML schema: "4.3"
-   File generated on: "17-Oct-2023 17:36:57"  */
+   File generated on: "17-Oct-2023 18:03:55"  */
 
 #ifndef Rte_REL_h
 #define Rte_REL_h
@@ -89,10 +89,6 @@ Std_ReturnType
   Rte_Read_VeINP_CAN_ACU3CrashOutputSts_sig_VeINP_CAN_ACU3CrashOutputSts_sig
   (UInt8* u);
 
-#define Rte_Read_VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig Rte_Read_REL_VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig
-
-Std_ReturnType Rte_Read_VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig(UInt8* u);
-
 #define Rte_Read_VeINP_HWA_RRChildrenProtectSwitch_sig_VeINP_HWA_RRChildrenProtectSwitch_sig Rte_Read_REL_VeINP_HWA_RRChildrenProtectSwitch_sig_VeINP_HWA_RRChildrenProtectSwitch_sig
 
 Std_ReturnType
@@ -108,6 +104,10 @@ Std_ReturnType Rte_Read_VeOUT_DLK_FRDoorLockSts_sig_VeOUT_DLK_FRDoorLockSts_sig
 
 Std_ReturnType Rte_Read_VeOUT_DLK_RRDoorLockSts_sig_VeOUT_DLK_RRDoorLockSts_sig
   (UInt8* u);
+
+#define Rte_Read_VeOUT_PDU_PowerMode_sig_VeOUT_PDU_PowerMode_sig Rte_Read_REL_VeOUT_PDU_PowerMode_sig_VeOUT_PDU_PowerMode_sig
+
+Std_ReturnType Rte_Read_VeOUT_PDU_PowerMode_sig_VeOUT_PDU_PowerMode_sig(UInt8* u);
 
 #define Rte_Read_VeOUT_SP_EspVehSpd_kmh_VeOUT_SP_EspVehSpd_kmh Rte_Read_REL_VeOUT_SP_EspVehSpd_kmh_VeOUT_SP_EspVehSpd_kmh
 
