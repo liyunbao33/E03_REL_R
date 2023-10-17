@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "REL"
    ARXML schema: "4.3"
-   File generated on: "12-Oct-2023 10:14:52"  */
+   File generated on: "17-Oct-2023 17:36:57"  */
 
 #ifndef Rte_REL_h
 #define Rte_REL_h
@@ -15,46 +15,6 @@
 #include "Compiler.h"
 
 /* Data access functions */
-#define Rte_Write_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg Rte_Write_REL_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg Rte_Invalidate_REL_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg(void);
-
-#define Rte_Write_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg Rte_Write_REL_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg Rte_Invalidate_REL_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg(void);
-
-#define Rte_Write_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg Rte_Write_REL_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg Rte_Invalidate_REL_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg(void);
-
-#define Rte_Write_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg Rte_Write_REL_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg Rte_Invalidate_REL_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg(void);
-
 #define Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
 
 Std_ReturnType Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg

@@ -2,7 +2,7 @@
 ## Makefile generated for component 'REL'. 
 ## 
 ## Makefile     : REL.mk
-## Generated on : Mon Sep 25 21:47:30 2023
+## Generated on : Tue Oct 17 17:37:00 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/REL.exe
 ## Product type : executable
 ## 
@@ -22,7 +22,7 @@ MAKEFILE                  = REL.mk
 MATLAB_ROOT               = D:/APP/matlab
 MATLAB_BIN                = D:/APP/matlab/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/DELL/Desktop/E03_REL_R
+START_DIR                 = C:/Users/DELL/Desktop/E03_REL_R_PACK/E03_REL_R
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -155,7 +155,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_STAN
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/REL_autosar_rtw/REL.c $(START_DIR)/REL_autosar_rtw/REL_data.c
+SRCS = $(START_DIR)/REL_autosar_rtw/REL.c
 
 ALL_SRCS = $(SRCS)
 
@@ -163,7 +163,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = REL.obj REL_data.obj
+OBJS = REL.obj
 
 ALL_OBJS = $(OBJS)
 
@@ -282,10 +282,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
 
 
 REL.obj : $(START_DIR)/REL_autosar_rtw/REL.c
-	$(CC) $(CFLAGS) -Fo"$@" $(subst /,\,"$<")
-
-
-REL_data.obj : $(START_DIR)/REL_autosar_rtw/REL_data.c
 	$(CC) $(CFLAGS) -Fo"$@" $(subst /,\,"$<")
 
 
