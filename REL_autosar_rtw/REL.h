@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.5
+ * Model version                  : 1.8
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Oct 17 18:03:49 2023
+ * C/C++ source code generated on : Thu Oct 19 17:38:48 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -42,9 +42,8 @@ typedef struct {
   uint8 is_SwValid;                    /* '<S3>/FRDoorRlsReq' */
   uint8 is_RlsReq;                     /* '<S3>/FRDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FRDoorRlsReq' */
-  uint8 is_DoorLock;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_RlsReq_m;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_Trigger_h;                  /* '<S3>/FRDoorRlsReq' */
+  uint8 is_RlsReq_n;                   /* '<S3>/FRDoorRlsReq' */
+  uint8 is_Trigger_e;                  /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FRDoorRlsReq' */
