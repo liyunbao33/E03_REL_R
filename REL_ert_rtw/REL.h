@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.25
+ * Model version                  : 1.6
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Oct 16 23:49:13 2023
+ * C/C++ source code generated on : Thu Oct 19 17:27:09 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -38,19 +38,11 @@ typedef struct {
   uint16_T temporalCounter_i1;         /* '<S3>/FRDoorRlsDriver' */
   uint8_T is_active_c19_DoorRlsDriver; /* '<S3>/FRDoorRlsDriver' */
   uint8_T is_c19_DoorRlsDriver;        /* '<S3>/FRDoorRlsDriver' */
-  uint8_T is_Normal;                   /* '<S3>/FRDoorRlsDriver' */
   uint8_T is_MainProgress;             /* '<S3>/FRDoorRlsDriver' */
   uint8_T is_Release;                  /* '<S3>/FRDoorRlsDriver' */
   uint8_T is_Step2_Open;               /* '<S3>/FRDoorRlsDriver' */
-  uint8_T is_MainProgress_a;           /* '<S3>/FRDoorRlsDriver' */
-  uint8_T is_Release_h;                /* '<S3>/FRDoorRlsDriver' */
-  uint8_T is_Step2_Open_f;             /* '<S3>/FRDoorRlsDriver' */
   uint8_T SL_e_CycleCount;             /* '<S3>/FRDoorRlsDriver' */
   uint8_T SL_e_DoorRlsDelayTime;       /* '<S3>/FRDoorRlsDriver' */
-  boolean_T SO_b_DoorRlsReq_prev;      /* '<S3>/FRDoorRlsDriver' */
-  boolean_T SO_b_DoorRlsReq_start;     /* '<S3>/FRDoorRlsDriver' */
-  boolean_T SI_b_ElecDoorCfg_prev;     /* '<S3>/FRDoorRlsDriver' */
-  boolean_T SI_b_ElecDoorCfg_start;    /* '<S3>/FRDoorRlsDriver' */
 } DW_FRDoorRlsDriver_REL_T;
 
 /* Block states (default storage) for system '<S3>/FRDoorRlsReq' */
@@ -59,9 +51,8 @@ typedef struct {
   uint8_T is_SwValid;                  /* '<S3>/FRDoorRlsReq' */
   uint8_T is_RlsReq;                   /* '<S3>/FRDoorRlsReq' */
   uint8_T is_Trigger;                  /* '<S3>/FRDoorRlsReq' */
-  uint8_T is_DoorLock;                 /* '<S3>/FRDoorRlsReq' */
-  uint8_T is_RlsReq_i;                 /* '<S3>/FRDoorRlsReq' */
-  uint8_T is_Trigger_j;                /* '<S3>/FRDoorRlsReq' */
+  uint8_T is_RlsReq_n;                 /* '<S3>/FRDoorRlsReq' */
+  uint8_T is_Trigger_e;                /* '<S3>/FRDoorRlsReq' */
   uint8_T temporalCounter_i1;          /* '<S3>/FRDoorRlsReq' */
   uint8_T temporalCounter_i2;          /* '<S3>/FRDoorRlsReq' */
   uint8_T temporalCounter_i3;          /* '<S3>/FRDoorRlsReq' */
@@ -90,8 +81,8 @@ typedef struct {
 
 /* External inputs (root inport signals with default storage) */
 typedef struct {
-  UInt8 VeINP_CAN_PowerMode_sig_VeINP_C;
-                  /* '<Root>/VeINP_CAN_PowerMode_sig_VeINP_CAN_PowerMode_sig' */
+  UInt8 VeOUT_PDU_PowerMode_sig_VeOUT_P;
+                  /* '<Root>/VeOUT_PDU_PowerMode_sig_VeOUT_PDU_PowerMode_sig' */
   Boolean VbINP_HWA_FRDoorAjar_flg_VbINP_;
                 /* '<Root>/VbINP_HWA_FRDoorAjar_flg_VbINP_HWA_FRDoorAjar_flg' */
   Boolean VbINP_HWA_RRDoorAjar_flg_VbINP_;
