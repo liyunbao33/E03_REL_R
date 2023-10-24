@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.8
+ * Model version                  : 1.10
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Thu Oct 19 17:38:48 2023
+ * C/C++ source code generated on : Tue Oct 24 16:04:23 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -16,16 +16,10 @@
 #ifndef RTW_HEADER_REL_private_h_
 #define RTW_HEADER_REL_private_h_
 #include "rtwtypes.h"
+#include "REL_types.h"
 #include "Rte_Type.h"
 #include "REL.h"
-#include "REL_types.h"
 
-extern void REL_FRDoorRlsDriver_Init(uint8 *rty_SO_e_MotorCmd, uint8
-  *rty_SO_e_MotorPwm, boolean *rty_SO_b_Error);
-extern void REL_FRDoorRlsDriver(uint8 rtu_SI_e_Volt100mV, boolean
-  rtu_SO_b_DoorRlsReq, Boolean rtu_SI_b_DoorAjar, Boolean rtu_SI_b_DoorOpen,
-  uint8 rtu_SI_e_DoorRlsDelayTime, uint8 *rty_SO_e_MotorCmd, uint8
-  *rty_SO_e_MotorPwm, boolean *rty_SO_b_Error, DW_FRDoorRlsDriver_REL_T *localDW);
 extern void REL_FRDoorRlsReq_Init(boolean *rty_SO_b_DoorRlsReq, Unlock_Req_E
   *rty_SO_m_UnlockReq);
 extern void REL_FRDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean

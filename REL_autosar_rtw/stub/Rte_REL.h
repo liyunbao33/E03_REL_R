@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "REL"
    ARXML schema: "4.3"
-   File generated on: "19-Oct-2023 17:38:53"  */
+   File generated on: "24-Oct-2023 16:04:30"  */
 
 #ifndef Rte_REL_h
 #define Rte_REL_h
@@ -209,30 +209,6 @@ Std_ReturnType
   Rte_Invalidate_VbOUT_REL_RRDoorAjarSwitch_flg_VbOUT_REL_RRDoorAjarSwitch_flg
   (void);
 
-#define Rte_Write_VeOUT_REL_FRReleaseLatchStatus_sig_VeOUT_REL_FRReleaseLatchStatus_sig Rte_Write_REL_VeOUT_REL_FRReleaseLatchStatus_sig_VeOUT_REL_FRReleaseLatchStatus_sig
-
-Std_ReturnType
-  Rte_Write_VeOUT_REL_FRReleaseLatchStatus_sig_VeOUT_REL_FRReleaseLatchStatus_sig
-  (UInt8 u);
-
-#define Rte_Invalidate_VeOUT_REL_FRReleaseLatchStatus_sig_VeOUT_REL_FRReleaseLatchStatus_sig Rte_Invalidate_REL_VeOUT_REL_FRReleaseLatchStatus_sig_VeOUT_REL_FRReleaseLatchStatus_sig
-
-Std_ReturnType
-  Rte_Invalidate_VeOUT_REL_FRReleaseLatchStatus_sig_VeOUT_REL_FRReleaseLatchStatus_sig
-  (void);
-
-#define Rte_Write_VeOUT_REL_RRReleaseLatchStatus_sig_VeOUT_REL_RRReleaseLatchStatus_sig Rte_Write_REL_VeOUT_REL_RRReleaseLatchStatus_sig_VeOUT_REL_RRReleaseLatchStatus_sig
-
-Std_ReturnType
-  Rte_Write_VeOUT_REL_RRReleaseLatchStatus_sig_VeOUT_REL_RRReleaseLatchStatus_sig
-  (UInt8 u);
-
-#define Rte_Invalidate_VeOUT_REL_RRReleaseLatchStatus_sig_VeOUT_REL_RRReleaseLatchStatus_sig Rte_Invalidate_REL_VeOUT_REL_RRReleaseLatchStatus_sig_VeOUT_REL_RRReleaseLatchStatus_sig
-
-Std_ReturnType
-  Rte_Invalidate_VeOUT_REL_RRReleaseLatchStatus_sig_VeOUT_REL_RRReleaseLatchStatus_sig
-  (void);
-
 #define Rte_Write_VeOUT_REL_RRChildrenProtectSwitch_sig_VeOUT_REL_RRChildrenProtectSwitch_sig Rte_Write_REL_VeOUT_REL_RRChildrenProtectSwitch_sig_VeOUT_REL_RRChildrenProtectSwitch_sig
 
 Std_ReturnType
@@ -268,46 +244,6 @@ Std_ReturnType
 Std_ReturnType
   Rte_Invalidate_VeOUT_REL_HandleSwitchStsRL_sig_VeOUT_REL_HandleSwitchStsRL_sig
   (void);
-
-#define Rte_Write_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg Rte_Write_REL_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg Rte_Invalidate_REL_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_FRDoorMotorA_flg_VbOUT_REL_FRDoorMotorA_flg(void);
-
-#define Rte_Write_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg Rte_Write_REL_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg Rte_Invalidate_REL_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_FRDoorMotorB_flg_VbOUT_REL_FRDoorMotorB_flg(void);
-
-#define Rte_Write_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg Rte_Write_REL_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg Rte_Invalidate_REL_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_RRDoorMotorA_flg_VbOUT_REL_RRDoorMotorA_flg(void);
-
-#define Rte_Write_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg Rte_Write_REL_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
-
-Std_ReturnType Rte_Write_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
-  (Boolean u);
-
-#define Rte_Invalidate_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg Rte_Invalidate_REL_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg
-
-Std_ReturnType
-  Rte_Invalidate_VbOUT_REL_RRDoorMotorB_flg_VbOUT_REL_RRDoorMotorB_flg(void);
 
 #define Rte_Write_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg Rte_Write_REL_VbOUT_REL_FRDoorRlsReq_flg_VbOUT_REL_FRDoorRlsReq_flg
 
