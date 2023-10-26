@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'REL'.
  *
- * Model version                  : 1.10
+ * Model version                  : 1.11
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Oct 24 16:04:23 2023
+ * C/C++ source code generated on : Thu Oct 26 08:54:13 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -43,7 +43,7 @@ B_REL_T REL_B;
 DW_REL_T REL_DW;
 
 /* Forward declaration for local functions */
-static float64 REL_GetDoorRatSts(float64 ajar, float64 open);
+static uint8 REL_GetDoorRatSts(uint8 ajar, uint8 open);
 static uint8 REL_safe_cast_to_Rat_Sts_E(uint8 input);
 
 /*
@@ -234,17 +234,17 @@ void REL_FRDoorRlsReq(UInt8 rtu_SI_e_EspVehSpd, Boolean rtu_SI_b_EspVehSpdVld,
 }
 
 /* Function for Chart: '<S3>/DoorRatSts' */
-static float64 REL_GetDoorRatSts(float64 ajar, float64 open)
+static uint8 REL_GetDoorRatSts(uint8 ajar, uint8 open)
 {
-  float64 status;
-  if ((ajar == 0.0) && (open == 0.0)) {
-    status = 1.0;
-  } else if ((ajar == 1.0) && (open == 0.0)) {
-    status = 2.0;
-  } else if ((ajar == 1.0) && (open == 1.0)) {
-    status = 3.0;
+  uint8 status;
+  if ((ajar == 0) && (open == 0)) {
+    status = Rat_All_Lock;
+  } else if ((ajar == 1) && (open == 0)) {
+    status = Rat_Half_Lock;
+  } else if ((ajar == 1) && (open == 1)) {
+    status = Rat_Unlock;
   } else {
-    status = 0.0;
+    status = Rat_Invalid;
   }
 
   return status;
@@ -337,52 +337,16 @@ void REL_Step(void)                    /* Explicit Task: REL_Step */
    *  SignalConversion generated from: '<S2>/VbOUT_HWA_RRDoorFullOpen_flg_VbOUT_HWA_RRDoorFullOpen_flg_read'
    */
   if (REL_DW.is_active_c3_REL == 0U) {
-    float64 tmp;
     REL_DW.is_active_c3_REL = 1U;
-    tmp = REL_GetDoorRatSts((float64)tmpRead_0, (float64)tmpRead_4);
-    if (tmp < 2.147483648E+9) {
-      if (tmp >= -2.147483648E+9) {
-        rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E((uint8)(sint32)tmp);
-      } else {
-        rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(0);
-      }
-    } else {
-      rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(MAX_uint8_T);
-    }
-
-    tmp = REL_GetDoorRatSts((float64)tmpRead_1, (float64)tmpRead_5);
-    if (tmp < 2.147483648E+9) {
-      if (tmp >= -2.147483648E+9) {
-        rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E((uint8)(sint32)tmp);
-      } else {
-        rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(0);
-      }
-    } else {
-      rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(MAX_uint8_T);
-    }
+    rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(REL_GetDoorRatSts((uint8)
+      tmpRead_0, (uint8)tmpRead_4));
+    rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(REL_GetDoorRatSts((uint8)
+      tmpRead_1, (uint8)tmpRead_5));
   } else {
-    float64 tmp;
-    tmp = REL_GetDoorRatSts((float64)tmpRead_0, (float64)tmpRead_4);
-    if (tmp < 2.147483648E+9) {
-      if (tmp >= -2.147483648E+9) {
-        rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E((uint8)(sint32)tmp);
-      } else {
-        rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(0);
-      }
-    } else {
-      rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(MAX_uint8_T);
-    }
-
-    tmp = REL_GetDoorRatSts((float64)tmpRead_1, (float64)tmpRead_5);
-    if (tmp < 2.147483648E+9) {
-      if (tmp >= -2.147483648E+9) {
-        rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E((uint8)(sint32)tmp);
-      } else {
-        rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(0);
-      }
-    } else {
-      rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(MAX_uint8_T);
-    }
+    rtb_SO_m_FRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(REL_GetDoorRatSts((uint8)
+      tmpRead_0, (uint8)tmpRead_4));
+    rtb_SO_m_RRDoorRatSts = REL_safe_cast_to_Rat_Sts_E(REL_GetDoorRatSts((uint8)
+      tmpRead_1, (uint8)tmpRead_5));
   }
 
   /* End of Chart: '<S3>/DoorRatSts' */
