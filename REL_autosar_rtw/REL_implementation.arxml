@@ -3,7 +3,7 @@
 Auto generated XML Component Description for model REL
 Model version                : 1.5
 Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Nov 27 15:07:50 2023
+XML source code generated on : Mon Nov 27 15:08:59 2023
 Model Checksum               : 2162752989 1401323663 75932307 3244676416
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
@@ -11,7 +11,7 @@ Model Checksum               : 2162752989 1401323663 75932307 3244676416
         <AR-PACKAGE>
             <SHORT-NAME>Components</SHORT-NAME>
             <ELEMENTS>
-                <SWC-IMPLEMENTATION UUID="57850630-ba30-503e-bc47-f11e096e35e9">
+                <SWC-IMPLEMENTATION UUID="b809b2d3-6c5a-52e6-a925-693a4e5a2b2f">
                     <SHORT-NAME>REL_imp</SHORT-NAME>
                     <CODE-DESCRIPTORS>
                         <CODE>
