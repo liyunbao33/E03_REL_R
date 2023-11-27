@@ -5,7 +5,7 @@
  *
  * Model version                  : 1.5
  * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Wed Nov  1 17:51:37 2023
+ * C/C++ source code generated on : Mon Nov 27 15:07:43 2023
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -27,11 +27,13 @@
 /* Block states (default storage) for system '<S3>/FRDoorRlsReq' */
 typedef struct {
   uint8 is_active_c5_DoorRlsReq;       /* '<S3>/FRDoorRlsReq' */
+  uint8 is_DoorRlsReqHandle;           /* '<S3>/FRDoorRlsReq' */
   uint8 is_SwValid;                    /* '<S3>/FRDoorRlsReq' */
   uint8 is_RlsReq;                     /* '<S3>/FRDoorRlsReq' */
   uint8 is_Trigger;                    /* '<S3>/FRDoorRlsReq' */
-  uint8 is_RlsReq_f;                   /* '<S3>/FRDoorRlsReq' */
-  uint8 is_Trigger_d;                  /* '<S3>/FRDoorRlsReq' */
+  uint8 is_DoorLock;                   /* '<S3>/FRDoorRlsReq' */
+  uint8 is_RlsReq_e;                   /* '<S3>/FRDoorRlsReq' */
+  uint8 is_Trigger_l;                  /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i1;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i2;            /* '<S3>/FRDoorRlsReq' */
   uint8 temporalCounter_i3;            /* '<S3>/FRDoorRlsReq' */
